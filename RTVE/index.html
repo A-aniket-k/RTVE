@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Real-Time Video Enhancement</title>
+  <style>
+    /* Remove default margin and padding */
+    body, html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      overflow: hidden; /* Prevent scrolling */
+    }
+
+    /* Make the video fill the entire screen */
+    video {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover; /* Ensure the video covers the entire screen */
+    }
+
+    /* Optional: Add a background color behind the video */
+    body {
+      background-color: black;
+    }
+
+    /* Optional: Style the heading */
+    h1 {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      color: white;
+      z-index: 1; /* Ensure it appears above the video */
+    }
+  </style>
+</head>
+<body>
+  <!-- <h1>Real-Time Video Enhancement</h1> -->
+  <video id="webcam" autoplay playsinline></video>
+  <script src="app.js"></script>
+</body>
+</html>
